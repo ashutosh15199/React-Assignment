@@ -1,24 +1,15 @@
 import React, { useState } from "react";
 
 const images = [
-  { src: "/image/AZIZI IMAGE .jpg", name: "AZIZI IMAGE" },
-  { src: "/image/Aqua arc BNW.jpg", name: "Aqua Arc BNW" },
-  { src: "/image/Copy of AZIZI IMAGE .jpg", name: "Copy of AZIZI IMAGE" },
-  { src: "/image/Copy of Aqua arc BNW.jpg", name: "Copy of Aqua Arc BNW" },
-  { src: "/image/Copy of DAMAC image.jpg", name: "Copy of DAMAC IMAGE" },
-  { src: "/image/Copy of Danube image .jpg", name: "Copy of Danube IMAGE" },
-  { src: "/image/Copy of EMAAR IMAGE.jpg", name: "Copy of EMAAR IMAGE" },
-  { src: "/image/Copy of Ellington Belgrove image.jpg", name: "Ellington Belgrove" },
-  { src: "/image/Copy of Prestige One - Seaside.jpg", name: "Prestige One" },
-  { src: "/image/DAMAC image.jpg", name: "DAMAC IMAGE" },
-  { src: "/image/Danube image .jpg", name: "Danube IMAGE" },
-  { src: "/image/EMAAR IMAGE.jpg", name: "EMAAR IMAGE" },
-  { src: "/image/Ellington Belgrove image.jpg", name: "Ellington Belgrove" },
-  { src: "/image/Prestige One - Seaside.jpg", name: "Prestige One Seaside" },
-  { src: "/image/SAMANA IBIZA image.jpg", name: "SAMANA IBIZA" },
-  { src: "/image/SOBHA IMAGE.jpg", name: "SOBHA IMAGE" },
-  { src: "/image/Copy of SAMANA IBIZA image.jpg", name: "Copy of SAMANA IBIZA" },
-  { src: "/image/Copy of SOBHA IMAGE.jpg", name: "Copy of SOBHA IMAGE" },
+  { src: "/image/AZIZI IMAGE .jpg", name: "Azizi Developments" },
+  { src: "/image/Aqua arc BNW.jpg", name: "BnW Developments" },
+  { src: "/image/Copy of DAMAC image.jpg", name: "Damac Properties" },
+  { src: "/image/Copy of EMAAR IMAGE.jpg", name: "Emaar Properties" },
+  { src: "/image/Copy of Danube image .jpg", name: "Danube Properties" },
+  { src: "/image/SOBHA IMAGE.jpg", name: "Sobha Realty" },
+  { src: "/image/Copy of Ellington Belgrove image.jpg", name: "Ellington Properties" },
+  { src: "/image/Prestige One - Seaside.jpg", name: "Prestige One Developments" },
+  { src: "/image/SAMANA IBIZA image.jpg", name: "Samana Developer" },
 ];
 
 const ITEMS_PER_PAGE = 6;
