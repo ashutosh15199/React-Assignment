@@ -55,7 +55,7 @@ const ImageGallery = () => {
               alt={img.name}
               className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-[1.05] filter brightness-90 contrast-120 saturate-120"
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black rounded-md p-2 opacity-60 group-hover:opacity-40 transition-opacity duration-300 backdrop-blur-sm">
+            <div className="absolute inset-0 flex items-center justify-center bg-black p-2 opacity-60 group-hover:opacity-40 transition-opacity duration-300 backdrop-blur-sm">
               <p className="text-white w-[115px] text-sm font-[500] break-words text-center z-50">
                 {img.name}
               </p>
@@ -69,7 +69,7 @@ const ImageGallery = () => {
         <button
           onClick={goToPreviousPage}
           disabled={currentPage === 1}
-          className={`bg-[var(--primary-color)] p-2 rounded-[4px] max-h-[32px] flex items-center justify-center hover:opacity-80 ${
+          className={`bg-[var(--primary-color)] p-2 rounded-[4px] max-h-[36px] flex items-center justify-center hover:opacity-80 ${
             currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
@@ -78,7 +78,7 @@ const ImageGallery = () => {
         <button
           onClick={goToNextPage}
           disabled={currentPage === totalPages}
-          className={`bg-[var(--primary-color)] p-2 rounded-[4px] max-h-[32px] flex items-center justify-center hover:opacity-80 ${
+          className={`bg-[var(--primary-color)] p-2 rounded-[4px] max-h-[36px] flex items-center justify-center hover:opacity-80 ${
             currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
