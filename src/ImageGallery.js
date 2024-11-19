@@ -46,10 +46,12 @@ const ImageGallery = () => {
               alt={img.name}
               className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-[1.05] filter brightness-90 contrast-120 saturate-120"
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black p-2 opacity-60 group-hover:opacity-40 transition-opacity duration-300 backdrop-blur-sm">
-              <p className="text-white w-[110px] text-sm font-[600] break-words text-center z-50">
+            <div className="absolute inset-0 flex items-center justify-center bg-black p-2 opacity-60 group-hover:bg-opacity-40 transition-opacity duration-300 backdrop-blur-sm z-10">
+            <div className="flex items-center justify-center absolute inset-0">
+              <p className="!text-white w-[115px] text-base font-[600] break-words text-center z-50">
                 {img.name}
               </p>
+              </div>
             </div>
           </div>
         ))}
