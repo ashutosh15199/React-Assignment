@@ -40,7 +40,7 @@ const ImageGallery = () => {
 
   return (
     <div className="flex flex-col items-center justify-center m-auto min-h-screen bg-black w-full text-white px-4 py-6">
-      <p className="text-xs tracking-wide text-yellow-500 text-center">CHOOSE YOUR DEVELOPERS</p>
+      <p className="text-xs tracking-wide text-[var(--primary-color)] text-center">CHOOSE YOUR DEVELOPERS</p>
       <h1 className="text-3xl tracking-wide font-normal mt-2 text-center">TOP DEVELOPERS</h1>
 
       {/* Image Grid */}
@@ -48,15 +48,15 @@ const ImageGallery = () => {
         {currentImages.map((img, index) => (
           <div
             key={index}
-            className="relative group w-full sm:w-64 h-56 sm:h-56 border-[1px] border-yellow-500 cursor-pointer overflow-hidden"
+            className="relative group w-full sm:w-64 h-56 sm:h-56 border-[1px] border-[var(--primary-color)]  cursor-pointer overflow-hidden"
           >
             <img
               src={img.src}
               alt={img.name}
-              className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-[1.01]"
+              className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-[1.05] filter brightness-90 contrast-120 saturate-120"
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black rounded-md p-2 opacity-60 group-hover:opacity-40 transition-opacity duration-300">
-              <p className="text-white text-sm font-[500] break-words text-center z-50">
+            <div className="absolute inset-0 flex items-center justify-center bg-black rounded-md p-2 opacity-60 group-hover:opacity-40 transition-opacity duration-300 backdrop-blur-sm">
+              <p className="text-white w-[115px] text-sm font-[500] break-words text-center z-50">
                 {img.name}
               </p>
             </div>
@@ -69,7 +69,7 @@ const ImageGallery = () => {
         <button
           onClick={goToPreviousPage}
           disabled={currentPage === 1}
-          className={` bg-yellow-500 p-2 rounded-[2px] max-h-[32px] flex items-center justify-center ${
+          className={`bg-[var(--primary-color)] p-2 rounded-[4px] max-h-[32px] flex items-center justify-center hover:opacity-80 ${
             currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
@@ -78,7 +78,7 @@ const ImageGallery = () => {
         <button
           onClick={goToNextPage}
           disabled={currentPage === totalPages}
-          className={` bg-yellow-500 p-2 rounded-[2px] max-h-[32px] flex items-center justify-center ${
+          className={`bg-[var(--primary-color)] p-2 rounded-[4px] max-h-[32px] flex items-center justify-center hover:opacity-80 ${
             currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
